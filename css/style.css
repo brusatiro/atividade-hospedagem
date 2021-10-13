@@ -1,0 +1,688 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Spartan:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header_home, .rodape {
+    height: 50px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+.header_logo {
+    color: #ededed;
+    font-size: 1.3rem;
+    margin: 0 15px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+}
+
+.menu_item {
+    color: #ededed;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.menu_item:hover {
+    font-size: 1.1rem;
+}
+
+.conteudo_home {
+    background-image: url(/images/paulista.png);
+    background-size: cover;
+    padding: 0 20px;
+    box-sizing: border-box;
+    display: flex;
+    min-height: 100vh;
+}
+
+.home_texto {
+    width: 50%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home_titulo {
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.home_subtitulo {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+.home_opcoes {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_opcoes a {
+    text-decoration: none;
+}
+
+.button_opcoes {
+    color: #000;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: #ededed;
+    margin: 10px;
+    border: 1px solid #9A8C98;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.button_opcoes:hover {
+    border: 2px solid #b6b6b6;
+    font-size: 1.4rem;
+    background-color: #cac9c9;
+    height: 50px;
+}
+
+.rodape {
+    color: #ededed;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 880px) {
+    .conteudo_home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+        box-sizing: border-box;
+        margin-bottom: 0;
+    }
+
+    .home_texto {
+        width: 90%;
+        height: 50%;
+        margin-left: 40px;
+        margin-right: 40px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home_titulo {
+        height: 70%;
+    }
+    
+    .home_subtitulo {
+        height: 30%;
+    }
+
+    .home_opcoes {
+        width: 90%;
+        height: 50%;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 720px) {
+
+    .home_texto {
+        margin-left: 30px;
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home_titulo {
+        font-size: 1.2rem;
+        margin-bottom: 10px;   
+    }
+    
+    .home_subtitulo {
+        font-size: 1rem;
+    }
+
+    .opcoes_button {
+        width: 250px;
+    }
+}
+
+@media(max-width: 540px) {
+    .home_texto {
+        margin-top: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home_titulo {
+        font-size: 1rem;
+    }
+
+    .home_subtitulo {
+        padding-top: 10px;
+        box-sizing: border-box;
+        font-size: 0.9rem;
+
+    }
+
+    .home_opcoes {
+        width: 100%;
+    }
+
+    .opcoes_button {
+        width: 180px;
+    }
+
+    .opcoes_button:hover {
+        font-size: 1.1rem;
+        height: 45px;
+    }
+}
+
+/* páginas das opções de hotéis */
+
+.header_opcoes, .rodape_opcoes {
+    color: #ededed;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+.header_turismo, .rodape_turismo {
+    background-color: #2D6A4F;
+}
+
+.header_negocios, .rodape_negocios {
+    background-color: #013A63;
+}
+
+.header_trabalho, .rodape_trabalho {
+    background-color: #8A5A44;
+}
+
+.container_opcoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    font-family: 'Spartan', sans-serif;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.container_turismo {
+    background-color: #86c2a4;
+}
+
+.container_negocios {
+    background-color: #74b5cf;
+}
+
+.container_trabalho {
+    background-color: #d1a68f;
+}
+
+.hotel_titulo {
+    color: #ededed;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px #3a3a3a;
+    text-align: center;
+}
+
+.hotel_opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.hotel {
+    width: 20%;
+    min-width: 200px;
+    min-height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f09f;
+    border-radius: 15px;
+    margin: 15px;
+    border: 1px solid #b8b8b865;
+    box-shadow: 1px 1px 2px 1px  #f7f7f74d;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.hotel:hover {
+    background-color: #f0f0f0be;
+    min-width: 205px;
+    min-height: 285px;
+}
+
+.hotel_imagem {
+    max-width: 100%;
+}
+
+.hotel_nome {
+    color: #131313;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.avaliacao_hotel {
+    color: #131313;
+    font-size: 0.7rem;
+}
+
+.link_hotel {
+    text-decoration: none;
+}
+
+.rodape_opcoes {
+    color: #ededed;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media(max-width: 880px) {
+   
+    .hotel {
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .hotel_imagem {
+        width: 100%;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .hotel_titulo {
+        font-size: 1rem;
+    }
+
+   .hotel {
+    width: 100%;
+    min-height: 180px;
+   }
+
+   .hotel:hover {
+    min-height: 200px;
+   }
+
+   .hotel a {
+       display: flex;       
+       align-items: center;
+       width: 100%;
+   }
+   .hotel_nome {
+    font-size: 0.8rem;
+   }
+
+   .div_imagem {
+       width: 60%;
+       margin-right: 10px;
+   }
+
+   .div_texto {
+       width: 40%;
+   }
+}
+
+@media(max-width:400px) {
+    .hotel_nome {
+        font-size: 0.6rem;
+    }
+
+    .avaliacao_hotel {
+        font-size: 0.5rem;
+    }
+}
+
+/* página do hotel */
+
+.header_hotel {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    box-sizing: border-box;
+}
+
+.header_hotel, .rodape_hotel {
+    background-color: #4A4E69;
+}
+
+.pagina_hotel {
+    font-family: 'Spartan';
+    color: #4A4E69;
+    background-color: #F2E9E4;
+    min-height: 100vh;
+}
+
+.titulo_hotel {
+    font-family: 'Spartan', sans-serif;
+    font-size: 2rem;
+    padding: 50px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hotel_sobre {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.hotel_secao1 {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    background-color: #9A8C98;
+    border-radius: 15px;
+    border: 1px solid #9A8C98;
+    box-shadow: 1px 1px 2px #4A4E69;
+    margin-right: 20px;
+    padding: 20px 0;
+}
+
+.imagem_principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    height: 60%;
+}
+
+.imagem_principal img {
+    height: 100%;
+    width: 90%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #4A4E69;
+}
+
+.hotel_info {
+    height: 40%;
+    min-height: 200px;
+    padding-left: 30px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+}
+
+.hotel_info li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.hotel_info i {
+    color: #22223B;
+    margin-right: 5px;
+    font-size: 0.9rem;
+}
+
+.site_hotel {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site_hotel:hover {
+    text-decoration: underline;
+}
+
+.hotel_secao2 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 20px;
+}
+
+.hotel_descricao {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+
+}
+
+.hotel_atracoes {
+    padding-left: 20px;
+    height: 40%;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.hotel_atracoes h3 {
+    margin-bottom: 5px;
+}
+
+.galeria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+}
+
+.galeria_imagens {
+    background-color: #9A8C98;
+    border-radius: 15px;
+    border: 1px solid #9A8C98;
+    box-shadow: 1px 1px 2px #4A4E69;
+    margin: 30px;
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+}
+
+.img_galeria {
+    margin: 10px;
+    width: 20%;
+    min-width: 150px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px #4A4E69;
+}
+
+.mapa_hotel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    margin-top: 40px;
+}
+
+.mapa_hotel h2 {
+    margin-bottom: 30px;
+}
+
+.avaliar_hotel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vh;
+    margin-top: 30px;
+}
+
+.avaliar_hotel h2 {
+    margin-bottom: 25px;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 60%;
+    height: 15vh;
+}
+
+.avaliar_hotel button {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #F6FFF8;
+    color: #4A4E69;
+    text-transform: uppercase;
+    border-color: #4A4E69;
+    font-size: 0.9rem;
+}
+
+.avaliar_hotel button:hover {
+    color: #fff;
+    background-color: #4A4E69;
+}
+
+.rodape_hotel {
+    color: #ededed;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+
+@media(max-width: 1200px) {
+
+    .hotel_secao1 {
+        width: 40%;
+    }
+
+    .hotel_secao2 {
+        width: 40%;
+    }
+
+    .galeria_imagens {
+        width: 80%; 
+    }
+}
+
+@media(max-width: 800px) {
+    .titulo_hotel {
+        font-size: 1.7rem;
+        padding: 40px;
+    }
+
+    .hotel_sobre {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media(max-width: 700px) {
+    .hotel_sobre {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hotel_secao1 {
+        width: 60%;
+        margin-bottom: 40px;
+    }
+
+    .hotel_secao2 {
+        width: 80%;
+        text-align: center;
+    }
+
+    .hotel_atracoes {
+        list-style-position: inside;
+    }
+
+}
+
+@media(max-width: 540px) {
+    .hotel_sobre {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+}
